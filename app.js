@@ -27,6 +27,17 @@ var app = express();
 app.use(express.static('./public')); // load UI from public folder
 app.use(bodyParser.json());
 
+app.get("/", function(req, res){
+  console.log('test');
+  res.send("test");
+});
+
+app.get("/a", function(req, res){
+  console.log('test');
+  res.send("test");
+});
+
+
 // Create the service wrapper
 var conversation = new Conversation({
   // If unspecified here, the CONVERSATION_USERNAME and CONVERSATION_PASSWORD env properties will be checked
@@ -35,6 +46,9 @@ var conversation = new Conversation({
   'password': "bXpY5SyIJmsu",
   'version_date': '2017-05-26'
 });
+
+
+
 
 // Endpoint to be call from the client side
 app.post('/api/message', function(req, res) {
