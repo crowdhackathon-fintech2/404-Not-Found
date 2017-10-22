@@ -96,19 +96,19 @@
 }
 .slideshow li:nth-child(2) { 
   background-image: url(https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=1950);
-  animation-delay: 10s; 
+  animation-delay: 5s; 
 }
 .slideshow li:nth-child(3) { 
   background-image: url(https://qzprod.files.wordpress.com/2016/12/rtx29pto.jpg?quality=80&strip=all);
-  animation-delay: 20s; 
+  animation-delay: 10s; 
 }
 .slideshow li:nth-child(4) { 
   background-image: url(http://www.cbronline.com/wp-content/uploads/2017/01/Robot-help.jpg);
-  animation-delay: 30s; 
+  animation-delay: 15s; 
 }
 .slideshow li:nth-child(5) { 
   background-image: url(https://s-media-cache-ak0.pinimg.com/originals/76/2e/72/762e723ab4ad05c2dad58e0b80715633.jpg);
-  animation-delay: 40s; 
+  animation-delay: 20s; 
 }
 
 @keyframes imageAnimation { 
@@ -133,11 +133,11 @@
 }
 
 .ui {
-  background-color: rgba(172, 239, 230, 0.9);
+  background-color: rgba(22, 46, 42, 0.9);
 }
 
 .my-image {
-  background-image: url(http://crowdhackathon.com/fintech2/wp-content/uploads/2017/08/cover-4.png);
+  background-image: url("back.jpg");
   height: 100%;
   width: 100%;
   top: 0;
