@@ -27,14 +27,9 @@ var app = express();
 app.use(express.static('./public')); // load UI from public folder
 app.use(bodyParser.json());
 
-app.get("/", function(req, res){
-  console.log('test');
-  res.send("test");
-});
 
-app.get("/a", function(req, res){
-  console.log('test');
-  res.send("test");
+app.get("/dashboard", function(req, res){
+  res.sendFile(path.join(__dirname, '../conversation-simple-master/public', 'dashboard.html'));
 });
 
 
